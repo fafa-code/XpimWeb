@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>标注 - XpimWeb</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">  
+    <script type="text/javascript" src="../../core/js/jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="../../core/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../core/js/common/common.js"></script>
+    <script type="text/javascript" src="../../core/js/common/common3D.js"></script>
+    <script type="text/javascript" src="../../core/js/common/static.js"></script>
+    <script type="text/javascript" src="../../core/js/libs/three-r135.js"></script>
+    <script type="text/javascript" src="../../core/js/libs/stats.min.js"></script>
+    <script type="text/javascript" src="../../core/js/libs/Projector.js"></script>
+    <script type="text/javascript" src="../../core/js/libs/dat.gui.min.js"></script>	
+    <script type="text/javascript" src="../../core/js/libs/Detector.js"></script> 
+    <script type="text/javascript" src="../../core/js/libs/dat.gui.min.js"></script>	 
+    <script type="text/javascript" src="../../core/js/controls/OrbitControls-r93.js"></script> 
+    <script type="text/javascript" src="../../core/js/controls/DragControls.js"></script> 
+    <script type="text/javascript" src="../../core/js/loaders/constants.js"></script>  
+	<script type="text/javascript" src="../../core/js/d2/CSS2DRenderer.js"></script>	 
+    <script type="text/javascript" src="../../core/js/zip/zip.js"></script>
+    <script type="text/javascript" src="../../core/js/zip/zip-fs.js"></script>
+    <script type="text/javascript" src="../../core/js/zip/zip-ext.js"></script>
+    <script type="text/javascript" src="../../core/js/zip/dataview.js"></script>
+    <script type="text/javascript" src="../../core/js/zip/config.js"></script>  
+	<link rel="stylesheet" href="../../core/css/bootstrap.min.css">	 
+    <script type="text/javascript" src="../../core/js/manager/xpimManager.js"></script>
+	<link rel="stylesheet" href="../../core/css/xpimManager.css"> 
+	
+    <script type="text/javascript" src="../../plugins/xpimLoader/xpimLoader.js"></script>
+	<link rel="stylesheet" href="../../plugins/xpimLoader/xpimLoader.css">  
+	
+    <script type="text/javascript" src="../../plugins/xpimViewer/xpimViewer.js"></script>
+	<link rel="stylesheet" href="../../plugins/xpimViewer/xpimViewer.css">
+	
+    <script type="text/javascript" src="../../plugins/xpimTag/xpimTag.js"></script>
+	<link rel="stylesheet" href="../../plugins/xpimTag/xpimTag.css">
+	
+    <script type="text/javascript" src="./testTag.js"></script>
+</head>
+<body>  
+	<div style="width:100%;height:100%" id="xpimViewerContainerId"></div>
+	<div class="xpimOperateContainer" style="height:200px;">
+		<div class="xpimOperateBackground"></div>
+		<div class="xpimOperateInnerContainer">
+			<div class="xpimOperateTitle">标注 - 示例</div>
+			<div class="xpimOperateItemContainer">
+				<div class="xpimOperateItemTitle">选中的图元</div>
+				<div class="xpimOperateItemValueContainer">
+					<input id="tagNodeId" type="text" class="xpimOperateItemValueInput xpimOperateItemValueInputReadonly" readonly="readonly" placeholder="请点击3D模型中的某个图元" value=""/>
+				</div>
+			</div>
+			<div class="xpimOperateItemContainer">
+				<div class="xpimOperateItemTitle">标注文字</div>
+				<div class="xpimOperateItemValueContainer">
+					<input id="tagContentId" type="text" class="xpimOperateItemValueInput" value="我是标注文字"/>
+				</div>
+			</div>
+			<div class="xpimOperateItemContainer">
+				<div class="xpimOperateItemTitle"></div>
+				<div class="xpimOperateItemValueContainer">
+					<input id="tagAddBtnId" type="button" class="xpimOperateItemValueButton" value="点击添加标注"/>
+				</div>
+			</div>
+			<div class="xpimOperateItemContainer">
+				<div class="xpimOperateItemTitle"></div>
+				<div class="xpimOperateItemValueContainer">
+					<input id="tagRemoveBtnId" type="button" class="xpimOperateItemValueButton" value="点击删除标注"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
