@@ -12,7 +12,7 @@ XpimWeb是为解决业务场景常见3D需求而开发的一组Javascript开源�
 
 # 相关资源
 
-XpimRevitAddIn：一个开放源码的Revit插件，用于将Rvt格式的BIM模型转换成Xpim格式的文件。
+XpimRevitAddIn ( https://github.com/xpim/XpimRevitAddIn )：一个开放源码的Revit插件，用于BIM轻量化，可将Rvt格式的BIM模型转换成Xpim格式的文件。
 
 XPIM：开放的3D模型描述文件格式，实际是多个Json文件压缩后形成的文件，可由用户手工编辑或使用第三方软件生成。
 
