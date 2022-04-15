@@ -2,7 +2,7 @@
 
 XpimWeb是为解决业务场景常见3D需求而开发的一组Javascript开源库。XpimWeb通过加载Xim文件（Json格式的3D模型文件）展示3D场景，提供了模型（xpimViewer）、加载器（xpimLoader）、结构树（xpimTree）、图元属性（xpimPropertyList）、工具栏（xpimToolbar）等插件，提供旋转、平移、标注、剖切、爆炸、可见性等操作API接口。
 
-目前常用于BIM轻量化后的展示，可集成在应用软件中使用。
+目前常用于BIM轻量化后的展示，可集成在管理应用软件中使用。
 
 下一步，XpimWeb将面向行业、领域的3D需求，提供解决方案和代码，以帮助项目团队解决更多场景下的技术问题。
 
